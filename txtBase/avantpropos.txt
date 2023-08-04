@@ -1,0 +1,29 @@
+                                                   Avant-Propos
+
+Ce rapport a été réalisé dans le cadre de ma formation en tant que développeur Full Stack à l'IT Akademy, du 17 novembre 2022 au 24novembre 2023. 
+Son objectif est de valider les différents blocs de compétences requis pour l'obtention du diplôme.
+
+Mon parcours personnel est marqué par une diversité de métiers exercés, où la minutie et la bienveillance ont toujours été les maîtres mots. 
+J'ai eu l'opportunité d'explorer plusieurs domaines et de devenir compétent dans ceux-ci. Cependant, ma passion pour l'apprentissage et mon désir d'aider les autres ont continué de grandir. 
+C'est pourquoi j'ai décidé de me lancer dans un nouveau défi, un défi de taille : devenir un développeur accompli.
+
+La technologie et le développement informatique m'ont toujours fasciné. J'ai observé les incroyables possibilités offertes par le monde numérique et j'ai décidé de m'immerger dans cet univers en constante évolution.
+
+Au cours de cette formation, j'ai eu l'opportunité d'apprendre les bases fondamentales du développement, de me familiariser avec les langages de programmation et les technologies les plus couramment utilisés. 
+J'ai également acquis une compréhension globale de la conception et du déploiement d'applications web, ainsi que de la gestion des bases de données. 
+Chaque module de la formation a été l'occasion d'approfondir mes connaissances et de relever de nouveaux défis.
+
+Je tiens à remercier chaleureusement l'IT Akademy pour la qualité de son programme de formation et l'encadrement pédagogique attentif de ses formateurs. 
+Leur expertise et leur passion pour le développement m'ont inspiré et stimulé tout au long de ce parcours.
+
+J'aborde ce projet de soutenance avec enthousiasme et détermination. 
+Je suis fier du chemin parcouru jusqu'à présent et je suis convaincu que cette expérience en tant que développeur Full Stack me permettra d'ouvrir de nouvelles perspectives professionnelles passionnantes.
+
+Ce rapport témoigne de mes compétences, de mes réalisations et de mon engagement dans cette formation.
+
+Je tiens à exprimer ma gratitude envers tous ceux qui m'ont soutenu et encouragé dans cette aventure, ainsi qu'envers mes collègues de classe qui ont partagé cette expérience avec moi.
+
+
+
+DE LARREA Marc
+dfs26 2023
