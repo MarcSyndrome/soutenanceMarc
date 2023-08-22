@@ -1,0 +1,24 @@
+                                                Introduction
+
+Le projet IOT ( Purpaws ) de mon ecole IT AKADEMY
+
+Au cours de ma formation à l'IT Akademy, j'ai eu l'opportunité de participer à un projet passionnant axé sur l'IoT (Internet des Objets). 
+En tant que chef de projet, j'ai été chargé de superviser l'avancement et de gérer de manière agile scrum le travail d'équipe. 
+Dès le premier jour, mes collègues de projet (Mel, Ryan, Yannis) m'ont désigné pour ce rôle en raison de mon expérience professionnelle, estimant que j'étais le mieux qualifié pour assumer cette responsabilité.
+
+Dans le cadre de ce projet, nous avons dû identifier les technologies adaptées et concevoir une gamelle connectée pour chat. 
+Grâce à cet exercice, nous avons pu mettre en pratique de nombreux concepts et compétences requis pour la validation de notre formation.
+
+Le stage en entreprise 
+
+Parallèlement à ce projet, j'ai également eu l'opportunité d'effectuer un stage au sein de l'entreprise ARC France. 
+ARC France est une entreprise spécialisée dans le dépannage automobile. 
+Mon travail au sein de cette société a été axé sur le développement d'une application destinée à aider les conducteurs en détresse. 
+J'ai eu l'occasion de travailler en équipe sur ce projet, contribuant ainsi à son développement et à son amélioration. 
+Mon stage s'est déroulé du 17 juillet au 24 novembre 2023.
+
+
+
+
+DE LARREA Marc
+dfs26 2023

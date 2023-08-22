@@ -1,0 +1,24 @@
+                                                                                     Remerciements
+
+Je tiens à exprimer ma gratitude envers toutes les personnes qui m'ont soutenu et aidé tout au long de mon parcours en tant que développeur Full Stack. 
+Leur soutien inconditionnel et leurs précieux conseils ont été essentiels pour mon apprentissage et ma réussite. 
+
+Tout d'abord, je souhaite remercier chaleureusement Baptiste Coulaud, mon mentor, qui m'a initié à ce vaste monde du développement et m'a transmis ses connaissances avec passion. 
+Sa patience et sa disponibilité ont été d'une aide précieuse, et je lui suis reconnaissant de m'avoir encouragé à me dépasser constamment.
+
+Un grand merci également à mes collègues de travail, qui m'ont accompagné jour après jour dans cette aventure. 
+Leur expertise, leur soutien et leur esprit d'équipe ont créé un environnement propice à l'apprentissage et à l'épanouissement professionnel. 
+Je suis reconnaissant d'avoir eu la chance de travailler avec des personnes aussi talentueuses et bienveillantes.
+
+Je tiens également à exprimer ma reconnaissance envers l'IT Akademy, mon organisme de formation. 
+Leurs programmes d'apprentissage complets et leurs formateurs compétents m'ont permis de devenir un meilleur développeur Full Stack jours après jours. 
+Je suis reconnaissant envers toute l'équipe pédagogique pour leur engagement et leur dévouement.
+
+Enfin, je souhaite remercier mon entreprise, ARC France, qui m'a offert l'opportunité de mettre en pratique mes compétences et d'approfondir mes connaissances.
+Leur confiance en moi et leur soutien constant ont été déterminants dans ma progression professionnelle. 
+Je suis reconnaissant envers toute l'équipe d'ARC France pour leur accompagnement et leur encouragement.
+
+
+
+DE LARREA Marc
+dfs26 2023
