@@ -1,0 +1,79 @@
+Cette expérience est une véritable aventure, où chaque élément appris renferme en lui-même 
+des sujets qui pourraient être discutés bien plus longuement que le temps alloué à la présentation orale. 
+Ainsi, le mot d'ordre demeure la concision !
+
+Pendant les deux premières semaines de mon expérience, nous avons consacré du temps à la mise en place de mon environnement de travail 
+et j'ai reçu une présentation approfondie du fonctionnement de l'entreprise. Cette période a également inclus des visites des locaux, 
+des observations des appels avec les bénéficiaires pour comprendre le processus de traitement des appels, ainsi qu'une exploration détaillée des détails de mon futur espace de travail, 
+tant sur le plan physique qu'environnemental.
+
+Ensuite, nous avons plongé dans la résolution de problèmes, suivi d'un examen complet de tous les éléments interactifs de l'application Cactus. 
+J'ai relevé plusieurs problèmes à ce stade :
+
+- Certains formulaires étaient en réalité présentés sous forme de tableaux (utilisant les balises tr/td), dans lesquels du texte était inséré directement, 
+sans recours à des variables ou des composants réutilisables.
+- Certains éléments censés être des boutons étaient en fait des images (gif/jpg) agissant comme des liens de redirection.
+- Une portion substantielle du code datait de plus de 20 ans, ce que l'on appelle souvent du code "legacy", et s'est avérée au final inappropriée.
+
+Cette phase m'a permis de saisir une réalité manifeste mais parfois négligée : alors que nos formations nous enseignent à construire des solutions à partir de zéro, 
+le monde professionnel peut nécessiter des compromis dans le code, que ce soit pour des raisons de durabilité environnementale (évoquée sous le terme "green IT") 
+ou pour faciliter les révisions du code par des pairs ("code review").
+
+En collaboration avec Damien, nous avons entrepris la transformation des éléments graphiques agissant comme des boutons (une pratique discutable) 
+en véritables boutons textuels. Cette transformation permettait une meilleure internationalisation, la suppression des images de la base de données et la création d'un style CSS approprié. 
+Ensuite, nous avons exécuté une révision du code, employant des pratiques similaires à celles utilisées avec Git, 
+suivie de la création d'une "release note" détaillant nos modifications pour la version 2.26. 
+Nous avons également rédigé une documentation répertoriant nos initiales ainsi que les changements effectués, en y associant une date.
+
+Nous avons ensuite identifié des problèmes plus mineurs, que nous avons résolus rapidement, 
+avant de les soumettre à un processus de validation (tests) en environnement de recette. 
+Cette séquence de développement suivait le parcours : développement (dev) => recette => production (prod).
+
+De plus, nous avons automatisé des requêtes SQL, comme l'exemple suivant :
+```
+INSERT INTO ATP_Event VALUES (353233,'2015-01-25','14:28:43',NULL,'Renault',2,NULL,2,NULL,NULL,NULL);
+```
+
+Après mes vacances, Cédric m'a expliqué les "nugets", qui sont des bibliothèques de dépendances utilisées lors de la compilation. 
+Suite à cela, notre mission a consisté à évaluer le temps nécessaire pour résoudre différents problèmes, en d'autres termes, 
+à estimer la charge de travail associée à chaque ticket.
+
+Nous avons eu l'occasion de suivre les mises en recette du projet "bridge/Cactus". Nous avons revu la procédure, 
+car celle-ci était incomplète, puis nous avons soumis le projet "Bridge" à la phase de recette. 
+Durant cette période, nous avons consacré un total de 6 heures, avec moi et Damien présents tout au long, et une assistance de 4 heures de la part d'Aurélien.
+
+Ensuite, j'ai commencé à développer une API destinée à faciliter la migration entre deux applications, plus précisément entre l'espace RA et Calypso. 
+J'ai réussi à mettre en place une version fonctionnelle de cette API, avec des tests réalisés à l'aide de Postman, Swagger, TFS et MVS. 
+Cependant, cette version n'a pas satisfait les exigences du client et mon responsable a décidé de la refondre entièrement. 
+Pour cette nouvelle version de l'API, nous avons repris le processus depuis le début, en utilisant MVS comme base. 
+Nous avons créé le projet via TFS et l'avons ensuite cloné dans MVS. 
+Nous avons ensuite ajouté les différentes solutions nécessaires (Promethee/Promethee.Tests/Promethee.Business/Promethee.Business.Tests), 
+ainsi qu'un répertoire dédié à la base de données (BDD) et un autre pour les librarys (adresse de jonction avec la BDD). 
+
+Les dépendances nécessaires ont également été intégrées à l'aide de nugets.
+Un NuGet dans Microsoft Visual Studio est un module de code préconstruit qui ajoute des fonctionnalités ou des bibliothèques externes à un projet, 
+simplifiant ainsi le développement en réutilisant du code existant.
+Exemple :
+**Swagger** : Dans le domaine du développement web, Swagger est un outil essentiel qui permet de concevoir, 
+documenter et tester des APIs de manière efficiente. Il propose une interface interactive pour interagir avec les points d'accès 
+(endpoints) et génère automatiquement une documentation claire et compréhensible pour les développeurs.
+
+**Newtonsoft.Json** : Souvent simplement désignée sous le nom de Json.NET, 
+**Newtonsoft.Json** est une bibliothèque largement reconnue pour le traitement des données au format JSON 
+(JavaScript Object Notation) dans le domaine du développement logiciel. Cette bibliothèque facilite la sérialisation 
+(conversion d'objets en JSON) ainsi que la désérialisation (conversion de JSON en objets) grâce à une approche souple et pratique.
+
+Une fois cette étape accomplie, nous avons jeté les bases de notre future API. 
+Dans le but de garantir une compatibilité optimale pour la migration (serveur de 2013, code de 2023), 
+nous avons intégré **LLBLGen Pro**. **LLBLGen Pro** se révèle être un outil puissant et 
+flexible de mappage objet-relationnel (ORM) qui simplifie l'accès aux bases de données. 
+En permettant aux développeurs de manipuler les données au moyen d'objets et de requêtes orientées objet 
+plutôt que d'interactions directes avec les bases de données relationnelles, 
+cet outil améliore grandement l'efficacité et la maintenabilité du code. 
+Nous avons choisi la version 5.10.1 de **LLBLGen Pro**, 
+car elle est la seule à pouvoir prendre en charge .NET7 en cas de migration vers un serveur plus récent, 
+envisageant ainsi l'avenir de notre API. 
+(Cette version a été obtenue via le chemin \\srv-itt\ITT_Sources\Outils\BDD\LLBLGen\Versions).
+
+
+
