@@ -9,10 +9,10 @@ Dès le premier jour, mes collègues de projet (Mel, Ryan, Yannis) m'ont désign
 Dans le cadre de ce projet, nous avons dû identifier les technologies adaptées et concevoir une gamelle connectée pour chat. 
 Grâce à cet exercice, nous avons pu mettre en pratique de nombreux concepts et compétences requis pour la validation de notre formation.
 
-Le stage en entreprise 
+Le stage en entreprise ( Arc Europe France)
 
-Parallèlement à ce projet, j'ai également eu l'opportunité d'effectuer un stage au sein de l'entreprise ARC France. 
-ARC France est une entreprise spécialisée dans le dépannage automobile. 
+Parallèlement à ce projet, j'ai également eu l'opportunité d'effectuer un stage au sein de l'entreprise ARC. 
+ARC Europe France est une entreprise spécialisée dans le dépannage automobile. 
 Mon travail au sein de cette société a été axé sur le développement d'une application destinée à aider les conducteurs en détresse. 
 J'ai eu l'occasion de travailler en équipe sur ce projet, contribuant ainsi à son développement et à son amélioration. 
 Mon stage s'est déroulé du 17 juillet au 24 novembre 2023.
