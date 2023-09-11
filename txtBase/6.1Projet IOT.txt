@@ -1,0 +1,45 @@
+                                                        PROJET IOT ( internet des objets )
+
+
+Dans ce projet, la première étape a été la création de l'équipe. J'ai eu la chance de travailler avec d'excellents coéquipiers :
+
+- Ryan, qui possède une logique et une aisance remarquables en algorithmie,
+- Mel, qui a un goût prononcé pour le front-end et une réflexion hors du commun,
+- Enfin, Yannis, qui possède une expérience solide en programmation, un grand sens de l'humour, ainsi qu'une source de connaissances et de motivation très appréciable pour l'apprentissage.
+
+Lorsque nous nous sommes concertés pour déterminer comment le projet allait se dérouler, il leur est apparu evident que ma place serait celle de chef de projet. 
+En effet, mes expériences passées m'ont fait apparaître comme un leader à leurs yeux, et ils m'ont donc confié cette responsabilité sans même me laisser d'autre choix.
+
+Cela m'a permis de remplir plusieurs tâches cruciales du projet, notamment :
+
+- Arbitrer les décisions en cas de litiges ou d'indécisions,
+- Collaborer avec l'équipe pour définir l'organisation et les objectifs (utilisation de Scrum et définition de l'objectif final),
+- Gérer les petits conflits qui peuvent survenir,
+- Organiser le groupe afin de minimiser au maximum les éventuels ralentissements,
+- Évaluer les forces et les faiblesses de chacun afin d'équilibrer la répartition du travail et de garantir que le projet puisse être mené à bien dans les délais impartis.
+
+
+La deuxième étape a été de déterminer comment nous allions réaliser une gamelle connectée pour chat intégrée à une application web. Cette phase a soulevé plusieurs questions essentielles :
+
+- Quel langage de programmation devons-nous utiliser ?
+- Quelle architecture convient le mieux ?
+- Quelles technologies devons-nous intégrer ?
+- Comment construire le dispositif en lui-même ?
+- Quelles sont les exigences de l'école à ce sujet ?
+- Comment pouvons-nous travailler de manière efficace en équipe ?
+- Qui sera responsable de quelles tâches ?
+
+Nous avons abordé chacune de ces questions en groupe, et j'ai suggéré une idée supplémentaire : la nécessité de documenter l'ensemble du processus, en créant une présentation.
+
+En fin de compte, nous avons pris les décisions suivantes :
+
+- Langages de programmation : Python pour la partie embarquée, React pour le front-end, et PHP pour le back-end.
+- Architecture MVC (Modèle-Vue-Contrôleur).
+- Utilisation d'un Raspberry Pi ainsi qu'une puce pour le suivi du chat.
+- Nous avons élaboré plusieurs plans individuellement pour ne pas influencer les idées des autres membres, puis nous avons fusionné nos meilleures idées pour créer un prototype.
+- L'école nous avait imposé certains langages, mais nous avons pu justifier notre choix d'utiliser Python.
+- Nous avons adopté la méthode agile Scrum pour travailler ensemble de manière efficace tout au long de notre aventure.
+- Nous avons constaté que nous étions parfaitement équilibrés avec deux membres spécialisés en front-end et deux en back-end, avec Ryan et Yannis pour le back-end, et Mel et moi pour le front-end.
+
+
+En paralele, j'ai commencé sur Canva notre potentielle presentation
