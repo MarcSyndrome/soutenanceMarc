@@ -174,3 +174,12 @@ Nous avons donc créé le GitHub du projet IoT, ajouté les fichiers `.gitignore
 Ensuite, nous avons commencé à coder nos premières lignes dans `App.js`, qui est la pierre angulaire de notre application.
 
 ![Capture d'écran d'App.js](AppJs.png)
+
+
+
+
+
+
+                                        RESUME DES CHOSES A FAIRE ET MONTRER
+                                        
+Front / Back / Securite / Reseaux / Gestion projet / Codes / Images / Logos
