@@ -162,3 +162,15 @@ C'est en partie grâce à cet échange que j'ai pu établir une stratégie à co
 
 ****************************************************************
 
+
+Nous avons donc créé le GitHub du projet IoT, ajouté les fichiers `.gitignore` et `README.md`, ainsi que configuré le fichier `package.json` avec certaines dépendances, comme par exemple :
+
+"axios": "^1.4.0"   ===> Bibliothèque HTTP pour les requêtes réseau.
+"dotenv": "^16.3.1" ===> Gestion des variables d'environnement.
+"expo": "^48.0.9",  ===> Permet de voir via expo go sur notre tel mobile le resultat du code
+"path": "^0.12.7"   ===> Utilitaire pour la gestion des chemins de fichiers.
+"react": "^18.2.0"  ===> Langage React avec sa derniere version
+
+Ensuite, nous avons commencé à coder nos premières lignes dans `App.js`, qui est la pierre angulaire de notre application.
+
+![Capture d'écran d'App.js](AppJs.png)
