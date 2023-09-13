@@ -7,6 +7,8 @@ Dans ce projet, la première étape a été la création de l'équipe. J'ai eu l
 - Mel, qui a un goût prononcé pour le front-end et une réflexion hors du commun,
 - Enfin, Yannis, qui possède une expérience solide en programmation, un grand sens de l'humour, ainsi qu'une source de connaissances et de motivation très appréciable pour l'apprentissage.
 
+                                                            PresentationEquipe.png
+
 Lorsque nous nous sommes concertés pour déterminer comment le projet allait se dérouler, il leur est apparu evident que ma place serait celle de chef de projet. 
 En effet, mes expériences passées m'ont fait apparaître comme un leader à leurs yeux, et ils m'ont donc confié cette responsabilité sans même me laisser d'autre choix.
 
@@ -16,7 +18,7 @@ Cela m'a permis de remplir plusieurs tâches cruciales du projet, notamment :
 - Collaborer avec l'équipe pour définir l'organisation et les objectifs (utilisation de Scrum et définition de l'objectif final),
 - Gérer les petits conflits qui peuvent survenir,
 - Organiser le groupe afin de minimiser au maximum les éventuels ralentissements,
-- Évaluer les forces et les faiblesses de chacun afin d'équilibrer la répartition du travail et de garantir que le projet puisse être mené à bien dans les délais impartis.
+- Évaluer les forces et les faiblesses de chacun afin d'équilibrer la répartition du travail afin de garantir au maximum que le projet puisse être mené à bien dans les délais impartis.
 
 
 La deuxième étape a été de déterminer comment nous allions réaliser une gamelle connectée pour chat intégrée à une application web. Cette phase a soulevé plusieurs questions essentielles :
@@ -34,12 +36,36 @@ Nous avons abordé chacune de ces questions en groupe, et j'ai suggéré une id�
 En fin de compte, nous avons pris les décisions suivantes :
 
 - Langages de programmation : Python pour la partie embarquée, React pour le front-end, et PHP pour le back-end.
+
+            logoPython.png            logoReact.png            logoSymfony.png         
+
+Et l'interaction entre ces langages necessitait une vue claire :
+
+            LangagesIotServeurClient.png
+
 - Architecture MVC (Modèle-Vue-Contrôleur).
+
+Explication d'une archi mvc
+
+
 - Utilisation d'un Raspberry Pi ainsi qu'une puce pour le suivi du chat.
+
+explication d'un raspberry pour capter les infos du code et de l'IOT
+
+
 - Nous avons élaboré plusieurs plans individuellement pour ne pas influencer les idées des autres membres, puis nous avons fusionné nos meilleures idées pour créer un prototype.
-- L'école nous avait imposé certains langages, mais nous avons pu justifier notre choix d'utiliser Python.
-( l'IT Akademy nous avait demandé de réaliser un projet IoT (Internet des objets) ainsi qu'un "Fil Rouge" qui consistait initialement en la création séparée d'une application web et d'un objet IoT. Cependant, nous avons négocié avec l'école la possibilité de fusionner ces deux objectifs en un seul projet, en développant la gamelle connectée ainsi que son application web associée.)
+
+                                                                    PlansGamelle.png
+
+
+- L'école nous avait imposé certains langages, mais nous avons pu justifier notre choix d'utiliser Python. Elle est également de fait notre client.
+( l'IT Akademy nous avait demandé de réaliser un projet IoT (Internet des objets) ainsi qu'un "Fil Rouge" qui consistait initialement en la création séparée d'une application web et d'un objet IoT. 
+Cependant, nous avons négocié avec l'école la possibilité de fusionner ces deux objectifs en un seul projet, en développant la gamelle connectée ainsi que son application web associée.)
+
 - Nous avons adopté la méthode agile Scrum pour travailler ensemble de manière efficace tout au long de notre aventure.
+
+            A trouver une image + explication scrum/agile
+
 - Nous avons constaté que nous étions parfaitement équilibrés avec deux membres spécialisés en front-end et deux en back-end, avec Ryan et Yannis pour le back-end, et Mel et moi pour le front-end.
 
 
@@ -51,19 +77,35 @@ LES DEBUTS DU TRAVAIL D'EQUIPE
 
 Nous nous sommes répartis les tâches de la manière suivante, en vue de réaliser notre projet :
 
-1. **Notion** : Nous avons créé une section sur Notion. Notion est une plateforme de gestion de projet et de collaboration en ligne qui permet aux utilisateurs de créer, organiser et partager des informations de manière flexible. Elle combine des fonctionnalités de prise de notes, de gestion de tâches, de création de bases de données et de collaboration en temps réel au sein d'une seule application.( Faire screenshot de notre notion et le poser ici )
+1. **Notion** : Nous avons créé une section sur Notion. Notion est une plateforme de gestion de projet et de collaboration en ligne qui permet aux utilisateurs de créer, organiser et partager des informations de manière flexible. 
+Elle combine des fonctionnalités de prise de notes, de gestion de tâches, de création de bases de données et de collaboration en temps réel au sein d'une seule application.
 
-2. **Wireframes** : Les wireframes sont des schémas de conception initiale de l'interface de l'application. Ils nous ont permis de visualiser à quoi ressemblerait l'application avant de passer à la phase de développement. Un fichier "wireframes.png" montre ces schémas.
+                            Notion.png
 
-3. **Maquettes** : Les maquettes sont des représentations plus détaillées de l'interface, montrant les éléments de design, les couleurs et les emplacements des éléments de l'application. Elles nous ont permis d'avoir une idée précise du rendu final de l'application. Le fichier "Maquettes.png" illustre ces maquettes.
+2. **Wireframes** : Les wireframes sont des schémas de conception initiale de l'interface de l'application. 
+Ils nous ont permis de visualiser à quoi ressemblerait l'application avant de passer à la phase de développement. 
+                           
+                            wireframes.png
 
-4. **UML du projet** : Nous avons utilisé l'UML (Unified Modeling Language) pour modéliser différents aspects du projet, notamment le modèle conceptuel de données (MCD), le modèle physique de données (MPD), et la spécification des besoins (MOA, Méthode d'Organisation et d'Analyse). "MCD MPD.png" "MOA fct princ fct contraintes.png" "MOA vision projet.png" "Cahier des charges.png"
+
+3. **Maquettes** : Les maquettes sont des représentations plus détaillées de l'interface, montrant les éléments de design, les couleurs et les emplacements des éléments de l'application. 
+Elles nous ont permis d'avoir une idée précise du rendu final de l'application. 
+                            
+                            Maquettes.png
+
+4. **UML du projet** : Nous avons utilisé l'UML (Unified Modeling Language) pour modéliser différents aspects du projet, notamment le modèle conceptuel de données (MCD), le modèle physique de données (MPD), et la spécification des besoins (MOA, Méthode d'Organisation et d'Analyse). 
+
+                "MCD MPD.png"       "MOA fct princ fct contraintes.png"             "MOA vision projet.png"             "Cahier des charges.png"
 
 Ces différentes étapes de planification et de documentation ont contribué à assurer la cohérence et la clarté de notre projet tout au long de son développement.
 
 
 
-Nous avons ensuite créé un document se nommant "risque et criticité" ( Risques et criticite.png).
+Nous avons ensuite créé un document se nommant "risque et criticité" 
+
+                            Risques et criticite.png
+
+
 Un document "Risque et Criticité" est un outil de gestion de projet qui vise à identifier, évaluer et classer les risques potentiels associés à un projet. 
 Voici une explication détaillée de ce qu'est ce document :
 
@@ -74,19 +116,31 @@ Voici une explication détaillée de ce qu'est ce document :
 3. **Calcul de la criticité** : Pour déterminer la criticité de chaque risque, on applique généralement une formule mathématique, qui combine les estimations pessimistes et optimistes. Cette criticité permet de hiérarchiser les risques en fonction de leur importance pour le projet.
 Pour ce faire , nous avons donc appliquer cette formule mathematique simple : ( voir FormuleRisqueEtCriticite.png ) 
 
-J'explique:    P représente l'estimation pessimiste, c'est-à-dire la probabilité que le risque se matérialise de la pire manière possible.
+J'explique:    
+
+    P représente l'estimation "Pessimiste", c'est-à-dire la probabilité que le risque se matérialise de la pire manière possible.
     R signifie "Réaliste," et il s'agit de l'estimation moyenne ou d'une évaluation basée sur une perspective pragmatique.
-    O correspond à l'estimation optimiste, décrivant la probabilité que le risque se matérialise de la meilleure manière possible.
+    O correspond à l'estimation "Optimiste", décrivant la probabilité que le risque se matérialise de la meilleure manière possible.
 
-En utilisant cette formule, en prenant en compte à la fois l'avis pessimiste et optimiste, puis en ajoutant le résultat à deux estimations réalistes, vous obtenez un indicateur qui permet d'évaluer la probabilité globale d'occurrence d'un risque. Diviser ensuite ce résultat par 4 peut servir à normaliser l'évaluation pour obtenir une mesure plus représentative de la probabilité du risque.
+En utilisant cette formule, en prenant en compte à la fois l'avis pessimiste et optimiste, puis en ajoutant le résultat à deux estimations réalistes, nous obtenons un indicateur qui permet d'évaluer la probabilité globale d'occurrence d'un risque. 
+Nous divisons ensuite ce résultat par quatre pour normaliser l'évaluation et ainsi obtenir une mesure plus représentative de la probabilité du risque.
 
-Cette méthode permet d'obtenir une estimation de la probabilité de manière équilibrée en tenant compte des perspectives pessimistes, réalistes et optimistes. Elle peut aider à mieux évaluer et gérer les risques dans notre projet.
+Cette méthode permet d'obtenir une estimation de la probabilité de manière équilibrée en tenant compte des perspectives pessimistes, réalistes et optimistes. Elle nous a donc aidés à mieux évaluer et gérer les risques dans notre projet. 
 
 4. **Plan d'action** : Une fois les risques évalués et classés, on élabore des plans d'action pour chaque risque critique. Ces plans décrivent les mesures préventives et correctives à prendre en cas de réalisation du risque, afin de minimiser son impact sur le projet.
 
 5. **Suivi et mise à jour** : Le document "Risque et Criticité" n'est pas statique. Il est régulièrement mis à jour tout au long du projet pour refléter l'évolution des risques. On peut ainsi anticiper les problèmes potentiels et prendre des mesures proactives pour les gérer.
 
-Pour résumé, un document "Risque et Criticité" est un outil de gestion de projet essentiel qui permet d'identifier, évaluer et classer les risques potentiels, tout en élaborant des plans d'action pour minimiser leur impact sur la réussite du projet.
+Pour résumé, le document "Risque et Criticité" que nous avons réalisé tous ensemble est un outil de gestion de projet essentiel qui permet d'identifier, évaluer et classer les risques potentiels, tout en élaborant des plans d'action pour minimiser leur impact sur la réussite du projet.
+
+
+********************************
+
+Personnellement, ce fut un moment véritablement agréable d'échange entre coéquipiers. J'ai ainsi pu évaluer la psychologie de mes collègues de travail, ce qui m'a beaucoup aidé dans la gestion du projet. 
+J'ai pu voir où étaient les points bloquants pour eux, où étaient les incertitudes/doutes, et où étaient leurs points forts, là où ils se sentaient le mieux et ce qu'ils étaient sûrs de savoir/pouvoir faire. 
+C'est en partie grâce à cet échange que j'ai pu établir une stratégie à court et moyen terme pour atteindre notre objectif.
+
+********************************
 
 
 
