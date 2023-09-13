@@ -1,5 +1,6 @@
-                                                        PROJET IOT ( internet des objets )
+Voici la correction de votre résumé avec les fautes corrigées et la réindentation nécessaire :
 
+**PROJET IOT (Internet des objets)**
 
 Dans ce projet, la première étape a été la création de l'équipe. J'ai eu la chance de travailler avec d'excellents coéquipiers :
 
@@ -7,9 +8,9 @@ Dans ce projet, la première étape a été la création de l'équipe. J'ai eu l
 - Mel, qui a un goût prononcé pour le front-end et une réflexion hors du commun,
 - Enfin, Yannis, qui possède une expérience solide en programmation, un grand sens de l'humour, ainsi qu'une source de connaissances et de motivation très appréciable pour l'apprentissage.
 
-                                                            PresentationEquipe.png
+![Image](PresentationEquipe.png)
 
-Lorsque nous nous sommes concertés pour déterminer comment le projet allait se dérouler, il leur est apparu evident que ma place serait celle de chef de projet. 
+Lorsque nous nous sommes concertés pour déterminer comment le projet allait se dérouler, il leur est apparu évident que ma place serait celle de chef de projet. 
 En effet, mes expériences passées m'ont fait apparaître comme un leader à leurs yeux, et ils m'ont donc confié cette responsabilité sans même me laisser d'autre choix.
 
 Cela m'a permis de remplir plusieurs tâches cruciales du projet, notamment :
@@ -20,136 +21,144 @@ Cela m'a permis de remplir plusieurs tâches cruciales du projet, notamment :
 - Organiser le groupe afin de minimiser au maximum les éventuels ralentissements,
 - Évaluer les forces et les faiblesses de chacun afin d'équilibrer la répartition du travail afin de garantir au maximum que le projet puisse être mené à bien dans les délais impartis.
 
-
 La deuxième étape a été de déterminer comment nous allions réaliser une gamelle connectée pour chat intégrée à une application web. Cette phase a soulevé plusieurs questions essentielles :
 
-- Quel langage de programmation devons-nous utiliser ?
-- Quelle architecture convient le mieux ?
-- Quelles technologies devons-nous intégrer ?
-- Comment construire le dispositif en lui-même ?
-- Quelles sont les exigences de l'école à ce sujet ?
-- Comment pouvons-nous travailler de manière efficace en équipe ?
-- Qui sera responsable de quelles tâches ?
+1. Quel langage de programmation devons-nous utiliser ?
+2. Quelle architecture convient le mieux ?
+3. Quelles technologies devons-nous intégrer ?
+4. Comment construire le dispositif en lui-même ?
+5. Quelles sont les exigences de l'école à ce sujet ?
+6. Comment pouvons-nous travailler de manière efficace en équipe ?
+7. Qui sera responsable de quelles tâches ?
 
 Nous avons abordé chacune de ces questions en groupe, et j'ai suggéré une idée supplémentaire : la nécessité de documenter l'ensemble du processus, en créant une présentation.
 
 En fin de compte, nous avons pris les décisions suivantes :
 
-- Langages de programmation : Python pour la partie embarquée, React pour le front-end, et PHP pour le back-end.
+1. Langages de programmation : Python pour la partie embarquée, React pour le front-end, et PHP pour le back-end.
 
-            logoPython.png            logoReact.png            logoSymfony.png         
+![Python](logoPython.png) ![React](logoReact.png) ![PHP](logoSymfony.png)
 
-Et l'interaction entre ces langages necessitait une vue claire :
+Et l'interaction entre ces langages nécessitait une vue claire :
 
-            LangagesIotServeurClient.png
+![Langages IoT Serveur Client](LangagesIotServeurClient.png)
 
-- Architecture MVC (Modèle-Vue-Contrôleur).
+2. Architecture MVC (Modèle-Vue-Contrôleur) :
 
-Explication d'une archi mvc
+C'est un modèle de conception logicielle qui divise une application en trois composants interconnectés : le modèle, la vue et le contrôleur;
 
+- Le modèle représente la logique de l'application et les données. Dans notre projet, le modèle est responsable de la gestion des données de la gamelle connectée, telles que les informations sur la nourriture, les horaires d'alimentation, le nom du chat, etc.
 
-- Utilisation d'un Raspberry Pi ainsi qu'une puce pour le suivi du chat.
+- La vue est responsable de l'interface utilisateur. Dans notre cas, il s'agit de l'interface web que les utilisateurs utiliseront pour interagir avec la gamelle connectée.
 
-explication d'un raspberry pour capter les infos du code et de l'IOT
+- Le contrôleur agit comme un intermédiaire entre le modèle et la vue. Il traite les demandes de l'utilisateur et met à jour le modèle en conséquence.
+Par exemple, lorsqu'un utilisateur planifie l'alimentation de son chat via l'application, le contrôleur s'assure que ces informations sont enregistrées dans le modèle et que la vue est mise à jour pour refléter les changements.
 
+L'architecture MVC offre une séparation claire des fichiers du code ainsi qu'une logique plus facile à entrevoir, ce qui facilite la maintenance et l'évolutivité de l'application.
 
-- Nous avons élaboré plusieurs plans individuellement pour ne pas influencer les idées des autres membres, puis nous avons fusionné nos meilleures idées pour créer un prototype.
+3. Utilisation d'un Raspberry Pi ainsi qu'une puce pour le suivi du chat :
 
-                                                                    PlansGamelle.png
+Le Raspberry Pi est un petit ordinateur monocarte abordable qui peut être utilisé dans une variété d'applications, y
+ compris les projets IoT. Dans notre projet, nous avons choisi d'utiliser un Raspberry Pi pour plusieurs raisons :
 
+- Il est compact et économe en énergie, ce qui en fait un choix idéal pour un dispositif embarqué.
+- Il dispose de ports d'entrée/sortie (GPIO) permettant de connecter des capteurs et des actionneurs.
+- Il peut exécuter une version de Python, ce qui facilite la programmation de la partie embarquée de notre gamelle connectée.
 
-- L'école nous avait imposé certains langages, mais nous avons pu justifier notre choix d'utiliser Python. Elle est également de fait notre client.
-( l'IT Akademy nous avait demandé de réaliser un projet IoT (Internet des objets) ainsi qu'un "Fil Rouge" qui consistait initialement en la création séparée d'une application web et d'un objet IoT. 
+Le Raspberry Pi sera responsable de la collecte de données à partir de capteurs sur la gamelle, comme le poids de la nourriture, et de l'envoi de ces données au serveur back-end via une connexion Internet. Cela permet aux utilisateurs d'accéder à ces informations via l'application web.
+
+4. Nous avons élaboré plusieurs plans individuellement pour ne pas influencer les idées des autres membres, puis nous avons fusionné nos meilleures idées pour créer un prototype.
+
+![Plans Gamelle](PlansGamelle.png)
+
+5. L'école nous avait imposé certains langages, mais nous avons pu justifier notre choix d'utiliser Python. Elle est également de fait notre client. (L'IT Akademy nous avait demandé de réaliser un projet IoT (Internet des objets) ainsi qu'un "Fil Rouge" qui consistait initialement en la création séparée d'une application web et d'un objet IoT. 
 Cependant, nous avons négocié avec l'école la possibilité de fusionner ces deux objectifs en un seul projet, en développant la gamelle connectée ainsi que son application web associée.)
 
-- Nous avons adopté la méthode agile Scrum pour travailler ensemble de manière efficace tout au long de notre aventure.
+6. Nous avons adopté la méthode agile Scrum pour travailler ensemble de manière efficace tout au long de notre aventure.
 
-            A trouver une image + explication scrum/agile
+La méthodologie Scrum est un cadre de travail agile qui favorise la collaboration, la transparence et l'adaptabilité dans le développement de logiciels. Dans notre projet, nous avons choisi d'adopter Scrum pour plusieurs raisons :
 
-- Nous avons constaté que nous étions parfaitement équilibrés avec deux membres spécialisés en front-end et deux en back-end, avec Ryan et Yannis pour le back-end, et Mel et moi pour le front-end.
+- Scrum nous permet de travailler de manière itérative et incrémentale, ce qui signifie que nous développons notre projet par étapes successives et fonctionnelles.
+- Les "sprints" de Scrum sont des périodes de développement définies, généralement de deux à quatre semaines (dans notre cas, nous faisions un nouveau sprint toutes les deux semaines), au cours desquelles nous nous concentrons sur la réalisation d'objectifs spécifiques.
+- Scrum encourage la communication régulière au sein de l'équipe, ce qui est essentiel pour résoudre rapidement les problèmes et s'assurer que le projet avance sans problèmes.
 
+Au fil des jours, il m'est apparu évident que notre rythme et notre manière de travailler ensemble étaient encore optimisables. J'ai donc décidé de tenir une brève réunion tous les soirs, d'une durée de 15 à 20 minutes, pour résumer la journée en trois points :
+- Qu'as-tu accompli aujourd'hui ?
+- Quels problèmes as-tu rencontrés ?
+- Qu'as-tu prévu de faire demain ?
 
-En paralele, j'ai commencé sur Canva notre potentielle presentation
+Cela présentait plusieurs avantages :
+- Chacun d'entre nous savait où en étaient les autres,
+- Nous échangions sur nos problèmes, et si l'un d'entre nous avait une proposition, le problème était résolu facilement le lendemain matin, ce qui représentait un gain de temps et d'énergie,
+- Le maintien des échanges contribuait à maintenir une atmosphère positive au sein de l'équipe.
 
+7. Nous avons constaté que nous étions parfaitement équilibrés avec deux membres spécialisés en front-end et deux en back-end, avec Ryan et Yannis pour le back-end, et Mel et moi pour le front-end.
 
+En parallèle, j'ai commencé sur Canva notre potentielle présentation.
 
-LES DEBUTS DU TRAVAIL D'EQUIPE
+**LES DÉBUTS DU TRAVAIL D'ÉQUIPE**
 
 Nous nous sommes répartis les tâches de la manière suivante, en vue de réaliser notre projet :
 
 1. **Notion** : Nous avons créé une section sur Notion. Notion est une plateforme de gestion de projet et de collaboration en ligne qui permet aux utilisateurs de créer, organiser et partager des informations de manière flexible. 
 Elle combine des fonctionnalités de prise de notes, de gestion de tâches, de création de bases de données et de collaboration en temps réel au sein d'une seule application.
 
-                            Notion.png
+![Notion](Notion.png)
 
-2. **Wireframes** : Les wireframes sont des schémas de conception initiale de l'interface de l'application. 
-Ils nous ont permis de visualiser à quoi ressemblerait l'application avant de passer à la phase de développement. 
-                           
-                            wireframes.png
+2. **Wireframes** : Les wireframes sont des schémas de conception initiale de l'interface de l'application. Ils nous ont permis de visualiser à quoi ressemblerait l'application avant de passer à la phase de développement.
 
+![Wireframes](wireframes.png)
 
-3. **Maquettes** : Les maquettes sont des représentations plus détaillées de l'interface, montrant les éléments de design, les couleurs et les emplacements des éléments de l'application. 
-Elles nous ont permis d'avoir une idée précise du rendu final de l'application. 
-                            
-                            Maquettes.png
+3. **Maquettes** : Les maquettes sont des représentations plus détaillées de l'interface, montrant les éléments de design, les couleurs et les emplacements des éléments de l'application. Elles nous ont permis d'avoir une idée précise du rendu final de l'application.
 
-4. **UML du projet** : Nous avons utilisé l'UML (Unified Modeling Language) pour modéliser différents aspects du projet, notamment le modèle conceptuel de données (MCD), le modèle physique de données (MPD), et la spécification des besoins (MOA, Méthode d'Organisation et d'Analyse). 
+![Maquettes](Maquettes.png)
 
-                "MCD MPD.png"       "MOA fct princ fct contraintes.png"             "MOA vision projet.png"             "Cahier des charges.png"
+4. **UML du projet** : Nous avons utilisé l'UML (Unified Modeling Language) pour modéliser différents aspects du projet, notamment le modèle conceptuel de données (MCD), le modèle physique de données (MPD), et la spécification des besoins (MOA, Méthode d'Organisation et d'Analyse).
+
+![UML](MCDMPD.png) ![MOA](MOAfctprincfctcontraintes.png) ![MOA](MOAvisionprojet.png) ![Cahier des charges](Cahierdescharges.png)
 
 Ces différentes étapes de planification et de documentation ont contribué à assurer la cohérence et la clarté de notre projet tout au long de son développement.
 
+Nous avons ensuite créé un document se nommant "Risques et Criticité".
 
+![Risques et Criticité](Risquesetcriticite.png)
 
-Nous avons ensuite créé un document se nommant "risque et criticité" 
-
-                            Risques et criticite.png
-
-
-Un document "Risque et Criticité" est un outil de gestion de projet qui vise à identifier, évaluer et classer les risques potentiels associés à un projet. 
-Voici une explication détaillée de ce qu'est ce document :
+Un document "Risque et Criticité" est un outil de gestion de projet qui vise à identifier, évaluer et classer les risques potentiels associés à un projet. Voici une explication détaillée de ce qu'est ce document :
 
 1. **Identification des risques** : Dans ce document, on recense tous les risques possibles qui pourraient affecter la réussite du projet. Ces risques peuvent être de différentes natures, comme des retards, des problèmes techniques, des contraintes budgétaires, des conflits internes, etc.
 
-2. **Évaluation des risques** : Chaque risque est ensuite évalué en termes de probabilité de survenue (du pessimiste au plus optimiste) et d'impact potentiel sur le projet en cas de réalisation. On utilise souvent une échelle de notation pour ces deux critères.
+2. **Évaluation des risques** : Chaque risque est ensuite évalué en termes de probabilité de survenue (du pessimiste au plus optimiste) et d'impact potentiel sur le projet en cas de réalisation. On utilise souvent une échelle de
 
-3. **Calcul de la criticité** : Pour déterminer la criticité de chaque risque, on applique généralement une formule mathématique, qui combine les estimations pessimistes et optimistes. Cette criticité permet de hiérarchiser les risques en fonction de leur importance pour le projet.
-Pour ce faire , nous avons donc appliquer cette formule mathematique simple : ( voir FormuleRisqueEtCriticite.png ) 
+ notation pour ces deux critères.
 
-J'explique:    
+3. **Calcul de la criticité** : Pour déterminer la criticité de chaque risque, on applique généralement une formule mathématique, qui combine les estimations pessimistes et optimistes. Cette criticité permet de hiérarchiser les risques en fonction de leur importance pour le projet. 
+Pour ce faire, nous avons donc appliqué cette formule mathématique simple : (voir FormuleRisqueEtCriticite.png)
 
-    P représente l'estimation "Pessimiste", c'est-à-dire la probabilité que le risque se matérialise de la pire manière possible.
-    R signifie "Réaliste," et il s'agit de l'estimation moyenne ou d'une évaluation basée sur une perspective pragmatique.
-    O correspond à l'estimation "Optimiste", décrivant la probabilité que le risque se matérialise de la meilleure manière possible.
+J'explique :
+
+- P représente l'estimation "Pessimiste", c'est-à-dire la probabilité que le risque se matérialise de la pire manière possible.
+- R signifie "Réaliste", et il s'agit de l'estimation moyenne ou d'une évaluation basée sur une perspective pragmatique.
+- O correspond à l'estimation "Optimiste", décrivant la probabilité que le risque se matérialise de la meilleure manière possible.
 
 En utilisant cette formule, en prenant en compte à la fois l'avis pessimiste et optimiste, puis en ajoutant le résultat à deux estimations réalistes, nous obtenons un indicateur qui permet d'évaluer la probabilité globale d'occurrence d'un risque. 
 Nous divisons ensuite ce résultat par quatre pour normaliser l'évaluation et ainsi obtenir une mesure plus représentative de la probabilité du risque.
 
-Cette méthode permet d'obtenir une estimation de la probabilité de manière équilibrée en tenant compte des perspectives pessimistes, réalistes et optimistes. Elle nous a donc aidés à mieux évaluer et gérer les risques dans notre projet. 
+Cette méthode permet d'obtenir une estimation de la probabilité de manière équilibrée en tenant compte des perspectives pessimistes, réalistes et optimistes. Elle nous a donc aidés à mieux évaluer et gérer les risques dans notre projet.
 
 4. **Plan d'action** : Une fois les risques évalués et classés, on élabore des plans d'action pour chaque risque critique. Ces plans décrivent les mesures préventives et correctives à prendre en cas de réalisation du risque, afin de minimiser son impact sur le projet.
 
 5. **Suivi et mise à jour** : Le document "Risque et Criticité" n'est pas statique. Il est régulièrement mis à jour tout au long du projet pour refléter l'évolution des risques. On peut ainsi anticiper les problèmes potentiels et prendre des mesures proactives pour les gérer.
 
-Pour résumé, le document "Risque et Criticité" que nous avons réalisé tous ensemble est un outil de gestion de projet essentiel qui permet d'identifier, évaluer et classer les risques potentiels, tout en élaborant des plans d'action pour minimiser leur impact sur la réussite du projet.
+Pour résumer, le document "Risque et Criticité" que nous avons réalisé tous ensemble est un outil de gestion de projet essentiel qui permet d'identifier, évaluer et classer les risques potentiels, tout en élaborant des plans d'action pour minimiser leur impact sur la réussite du projet.
 
 
-********************************
+
+
+****************************************************************
 
 Personnellement, ce fut un moment véritablement agréable d'échange entre coéquipiers. J'ai ainsi pu évaluer la psychologie de mes collègues de travail, ce qui m'a beaucoup aidé dans la gestion du projet. 
 J'ai pu voir où étaient les points bloquants pour eux, où étaient les incertitudes/doutes, et où étaient leurs points forts, là où ils se sentaient le mieux et ce qu'ils étaient sûrs de savoir/pouvoir faire. 
 C'est en partie grâce à cet échange que j'ai pu établir une stratégie à court et moyen terme pour atteindre notre objectif.
 
-********************************
-
-
-
-
-
-
-
-
-
-
-
+****************************************************************
 
