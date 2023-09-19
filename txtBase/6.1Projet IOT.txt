@@ -176,6 +176,48 @@ Ensuite, nous avons commencé à coder nos premières lignes dans `App.js`, qui 
 ![Capture d'écran d'App.js](AppJs.png)
 
 
+À partir de là, j'ai essayé de pratiquer le Scrum en répartissant le travail de la manière la plus efficace possible au sein de l'équipe, 
+en déléguant certaines tâches, en définissant l'objectif à atteindre et en maintenant les sprints agiles des deux équipes (une front, l'autre back). 
+Je tiens à préciser que je ne suis pas Scrum Master, mais plutôt, pour le moment, un Scrum But (dit autrement, un débutant).
+
+Yannis s'occupait de la partie "industrielle" de l'objet, 
+Ryan a paramétré le Raspberry pour qu'il fasse le lien machine/back, 
+Mel a organisé, en tant que frontLead, les composants de l'application et ajouté les taches a faire sur Notion,
+et moi, je me suis concentré sur les demandes des clients (restrictions budgétaires pour l'objet, vérification des obligations linguistiques, vérification des contraintes, etc.) et j'ai commencé à réaliser quelques composants obligatoires, en particulier le header.
+
+![Capture d'écran du composant header](component_header.png)
+
+Il y avait plusieurs détails à prendre en compte, le premier étant l'emplacement (en haut), le deuxième étant la couleur. 
+Nous avons donc décidé d'appliquer une charte graphique. Nous les avons ajoutés en tant que variables dans le SCSS, que nous avons nommées "PrimaryColor" (pour le bleu) et "SecondaryColor" (pour l'orange). 
+Si le bouton du header est cliqué et/ou actif, alors il devient orange. Sinon, son état "naturel" est le bleu. 
+La cloche des notifications, si elle est cliquée, déroule une liste de notifications et s'ouvre lentement de la gauche vers le centre de l'écran. 
+Le bouton burger, lui, doit afficher un menu avec à l'intérieur des textes cliquables qui redirigent vers la page voulue.
+
+Nous avons avancé ainsi pendant plusieurs jours, en nous adaptant aux différentes nécessités du moment. 
+Les réunions devenaient de plus en plus précises et habituelles, le dialogue entre nous s'est installé de manière naturelle, et la progression était très satisfaisante.
+
+![Capture d'écran d'avance notion mel marc'](avance notion mel marc.png)
+
+Mais un jour, un mardi matin, tout fut chamboulé.
+
+L'école nous a envoyé un mail pour nous demander une .... oui oui, une présentation !
+Et la, je vous cache pas que je me suis retenu au maximum, mais la phrase "AHAH Je vous l'avais bien dit !!" a été sortie.
+Et quel bonheur d'avoir préparé, noté et illustré cette presentation Canva tout du long du projet qui s'est avéré, au final, être, ce que l'on appel dans le jargon geek, un "Preshot".
+Car il faut le savoir, la date limite pour la présentation était dans seulement 2 jours.
+Heureusement pour nous, environ 80% du travail avait déjà été réalisé, il nous restait principalement à définir le contenu verbal, à décider qui prononcerait quel discours, et à ajouter quelques slides supplémentaires pour plus de détails.
+ 
+
+Exemple de slides ajoutées:
+
+![Capture d'écran d'etude marche marketting](Etude marche Strategie marketing Marketing digital.png), 
+(LangagesIotServeurClient.png), 
+
+
+Et le canva:
+
+(presentation canva.png)
+
+
 
 
 
