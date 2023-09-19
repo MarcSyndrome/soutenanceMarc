@@ -251,10 +251,22 @@ Et le canva:
 (presentation canva.png)
 
 
+Une fois cette epreuve achevée, j'ai repris la suite de notre Notion c'est a dire, le bouton des notifications.
+
+![Capture d'écran de componentNotificationButton](componentNotificationButton.png)
+
 
 
 
 
                                         RESUME DES CHOSES A FAIRE ET MONTRER
-                                        
-Front / Back / Securite / Reseaux / Gestion projet / Codes / Images
+                         
+Images => mise a jour fréquentes   
+Gestion projet => fait            
+Front => fait
+Codes => fait en front, pas en back
+Back => voir cours ou projet
+Securite => voir les cours RootMe, owasp
+Reseaux => voir les cours
+
+
