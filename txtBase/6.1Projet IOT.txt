@@ -1,6 +1,10 @@
-Voici la correction de votre résumé avec les fautes corrigées et la réindentation nécessaire :
 
 **PROJET IOT (Internet des objets)**
+
+L'IT Akademy nous a demandé de réaliser un projet IOT, nous avons donc ( toute la classe ) ecrit sur des petits papiers des idées.
+Apres avoir lu et noté la pertinence des idées, nous avons voté pour celles qui nous intéressaient le plus et créé des équipes de 4.
+
+J'ai personnellement choisi de participer a la création d'une gamelle pour chat connectée a son application web et mobile ainsi qu'a son site marchand.
 
 Dans ce projet, la première étape a été la création de l'équipe. J'ai eu la chance de travailler avec d'excellents coéquipiers :
 
@@ -18,8 +22,8 @@ Cela m'a permis de remplir plusieurs tâches cruciales du projet, notamment :
 - Arbitrer les décisions en cas de litiges ou d'indécisions,
 - Collaborer avec l'équipe pour définir l'organisation et les objectifs (utilisation de Scrum et définition de l'objectif final),
 - Gérer les petits conflits qui peuvent survenir,
-- Organiser le groupe afin de minimiser au maximum les éventuels ralentissements,
-- Évaluer les forces et les faiblesses de chacun afin d'équilibrer la répartition du travail afin de garantir au maximum que le projet puisse être mené à bien dans les délais impartis.
+- Organiser le groupe afin de minimiser les éventuels ralentissements,
+- Évaluer les forces et les faiblesses de chacun afin d'équilibrer la répartition du travail et de garantir au maximum que le projet puisse être mené à bien dans les délais impartis.
 
 La deuxième étape a été de déterminer comment nous allions réaliser une gamelle connectée pour chat intégrée à une application web. Cette phase a soulevé plusieurs questions essentielles :
 
@@ -175,6 +179,24 @@ Ensuite, nous avons commencé à coder nos premières lignes dans `App.js`, qui 
 
 ![Capture d'écran d'App.js](AppJs.png)
 
+Nous avons également créé plusieurs règles en suivant au mieux ce qui nous a été enseigné, notamment :
+
+- DevOps : Le DevOps est une méthode de développement logiciel qui vise à améliorer la collaboration et la communication entre les équipes de développement (Dev) et les équipes d'exploitation (Ops). 
+Cette approche met l'accent sur l'automatisation, la mesure et le partage des informations pour atteindre un déploiement plus rapide et plus fiable des logiciels.
+
+- CI/CD : La CI (Intégration Continue) est une pratique de développement où les développeurs intègrent fréquemment leur code dans un référentiel partagé. Le CD (Livraison Continue) va plus loin en automatisant la mise en production du code intégré et testé. 
+Une fois que le code a passé les tests automatisés, il est prêt à être déployé en production sans étapes manuelles supplémentaires.
+
+- Création de branches localisées en fonction du travail à faire, selon la logique suivante :
+  - Actions à faire, par exemple =>  feature: Ajout d’une nouvelle fonctionnalité
+                                     Bugfix: Correction d’un bug
+  
+  - Travail ciblé, par exemple => ModificationsBoutons, AjoutHeader
+  
+Cela donne un résultat qui ressemble à :
+- feature/ModificationsBoutons
+- bugfix/header
+
 
 À partir de là, j'ai essayé de pratiquer le Scrum en répartissant le travail de la manière la plus efficace possible au sein de l'équipe, 
 en déléguant certaines tâches, en définissant l'objectif à atteindre et en maintenant les sprints agiles des deux équipes (une front, l'autre back). 
@@ -183,7 +205,7 @@ Je tiens à préciser que je ne suis pas Scrum Master, mais plutôt, pour le mom
 Yannis s'occupait de la partie "industrielle" de l'objet, 
 Ryan a paramétré le Raspberry pour qu'il fasse le lien machine/back, 
 Mel a organisé, en tant que frontLead, les composants de l'application et ajouté les taches a faire sur Notion,
-et moi, je me suis concentré sur les demandes des clients (restrictions budgétaires pour l'objet, vérification des obligations linguistiques, vérification des contraintes, etc.) et j'ai commencé à réaliser quelques composants obligatoires, en particulier le header.
+et moi, je me suis concentré sur les demandes des clients (restrictions budgétaires pour l'objet, vérification des obligations linguistiques, vérification des contraintes, etc.) et j'ai commencé à réaliser quelques composants obligatoires, comme le header, les pages de connexion ectect.
 
 ![Capture d'écran du composant header](component_header.png)
 
@@ -201,9 +223,9 @@ Les réunions devenaient de plus en plus précises et habituelles, le dialogue e
 Mais un jour, un mardi matin, tout fut chamboulé.
 
 L'école nous a envoyé un mail pour nous demander une .... oui oui, une présentation !
-Et la, je vous cache pas que je me suis retenu au maximum, mais la phrase "AHAH Je vous l'avais bien dit !!" a été sortie.
-Et quel bonheur d'avoir préparé, noté et illustré cette presentation Canva tout du long du projet qui s'est avéré, au final, être, ce que l'on appel dans le jargon geek, un "Preshot".
-Car il faut le savoir, la date limite pour la présentation était dans seulement 2 jours.
+Et la, je ne vous cache pas que je me suis retenu au maximum, mais la phrase "AHAH Je vous l'avais bien dit !!" a été sortie.
+Et quel bonheur d'avoir préparé, noté et illustré cette presentation Canva tout du long du projet qui s'est avéré être au final, ce que l'on appel dans le jargon geek, un "Preshot de fou"(PDF pour les intimes).
+Car il faut le savoir, la date limite pour la présentation était de seulement deux jours.
 Heureusement pour nous, environ 80% du travail avait déjà été réalisé, il nous restait principalement à définir le contenu verbal, à décider qui prononcerait quel discours, et à ajouter quelques slides supplémentaires pour plus de détails.
  
 
@@ -224,4 +246,4 @@ Et le canva:
 
                                         RESUME DES CHOSES A FAIRE ET MONTRER
                                         
-Front / Back / Securite / Reseaux / Gestion projet / Codes / Images / Logos
+Front / Back / Securite / Reseaux / Gestion projet / Codes / Images
