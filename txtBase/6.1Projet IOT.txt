@@ -2,13 +2,13 @@
 **PROJET IOT (Internet des objets)**
 
 L'IT Akademy nous a demandé de réaliser un projet IOT, nous avons donc ( toute la classe ) ecrit sur des petits papiers des idées.
-Apres avoir lu et noté la pertinence des idées, nous avons voté pour celles qui nous intéressaient le plus et créé des équipes de 4.
+Apres avoir lu et noté la pertinence des idées, nous avons voté pour celles qui nous intéressaient le plus et ensuite essayé de créer des équipes de 4.
 
 J'ai personnellement choisi de participer a la création d'une gamelle pour chat connectée a son application web et mobile ainsi qu'a son site marchand.
 
 Dans ce projet, la première étape a été la création de l'équipe. J'ai eu la chance de travailler avec d'excellents coéquipiers :
 
-- Ryan, qui possède une logique et une aisance remarquables en algorithmie,
+- Ryan, qui possède une logique impressionante et une aisance remarquable en algorithmie,
 - Mel, qui a un goût prononcé pour le front-end et une réflexion hors du commun,
 - Enfin, Yannis, qui possède une expérience solide en programmation, un grand sens de l'humour, ainsi qu'une source de connaissances et de motivation très appréciable pour l'apprentissage.
 
