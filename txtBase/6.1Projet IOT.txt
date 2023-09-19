@@ -197,9 +197,17 @@ Cela donne un résultat qui ressemble à :
 - feature/ModificationsBoutons
 - bugfix/header
 
+Avant de faire une pull-request, il fallait que le/la coéquipier/ère accepte le push de l'autre. 
+Nous avons donc ajouté la règle de faire une revue de code ensemble (code review) et de vérifier si tout était exactement comme il fallait, 
+tant au niveau de la propreté du code, de l'efficacité énergétique (green IT), de la sécurité, des commentaires insuffisants, etc.
+Et c'est seulement une fois validé que nous pouvions pull le code et continuer a avancer.
+De plus, nous nous sommes également efforcé de ne pas touché au code de l'autre.
 
-À partir de là, j'ai essayé de pratiquer le Scrum en répartissant le travail de la manière la plus efficace possible au sein de l'équipe, 
-en déléguant certaines tâches, en définissant l'objectif à atteindre et en maintenant les sprints agiles des deux équipes (une front, l'autre back). 
+
+J'ai essayé de pratiquer le Scrum en répartissant le travail de la manière la plus efficace possible au sein de l'équipe, 
+- en déléguant certaines tâches, 
+- en définissant l'objectif à atteindre et 
+- en maintenant les sprints agiles des deux équipes (l'une front, l'autre back). 
 Je tiens à préciser que je ne suis pas Scrum Master, mais plutôt, pour le moment, un Scrum But (dit autrement, un débutant).
 
 Yannis s'occupait de la partie "industrielle" de l'objet, 
@@ -214,6 +222,9 @@ Nous avons donc décidé d'appliquer une charte graphique. Nous les avons ajout�
 Si le bouton du header est cliqué et/ou actif, alors il devient orange. Sinon, son état "naturel" est le bleu. 
 La cloche des notifications, si elle est cliquée, déroule une liste de notifications et s'ouvre lentement de la gauche vers le centre de l'écran. 
 Le bouton burger, lui, doit afficher un menu avec à l'intérieur des textes cliquables qui redirigent vers la page voulue.
+
+![Capture d'écran du header ](header.js)
+![Capture d'écran du scss du header ](header.scss)
 
 Nous avons avancé ainsi pendant plusieurs jours, en nous adaptant aux différentes nécessités du moment. 
 Les réunions devenaient de plus en plus précises et habituelles, le dialogue entre nous s'est installé de manière naturelle, et la progression était très satisfaisante.
