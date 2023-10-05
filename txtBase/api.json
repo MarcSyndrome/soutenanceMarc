@@ -1,0 +1,693 @@
+{
+  "uuid": "2210c311-76cf-4dc4-a26e-b06e8ddc7ee2",
+  "lastMigration": 27,
+  "name": "Api",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "5c2ddf5b-de45-4eee-804b-4f51614a9952",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "auth/login",
+      "responses": [
+        {
+          "uuid": "e0701551-3ab2-44bd-b7af-152153289f19",
+          "body": "{\n  \n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "cd0b8b05-d67a-47bd-913d-53bb1efb08c8",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "auth/logout",
+      "responses": [
+        {
+          "uuid": "0e8df44c-542d-42b1-8dfa-027b8c99d8f3",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "a6763ae5-2394-42e4-8087-fe610382d5d6",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "auth/signin",
+      "responses": [
+        {
+          "uuid": "7a69a187-2383-4e39-94c3-10b66330a2e6",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "2795495e-d925-49ce-b168-afbe452870a5",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "user/account",
+      "responses": [
+        {
+          "uuid": "413bb402-9d85-48c6-ac13-a0d9c3a39734",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "e9876282-dfd9-414e-9b1f-b2351fb2cc47",
+      "type": "http",
+      "documentation": "",
+      "method": "put",
+      "endpoint": "user/account",
+      "responses": [
+        {
+          "uuid": "c1a34d37-4e99-4294-8649-3c819ddf2735",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "435a27ad-362e-4e32-82f5-b5eaa04479a4",
+      "type": "http",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "user",
+      "responses": [
+        {
+          "uuid": "41e49492-1cb5-4a39-8294-852643b74a9b",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "ab8dcbad-416e-4848-91c9-2acdf35b11fb",
+      "type": "http",
+      "documentation": "url ===> http://localhost:3001/user/animal ",
+      "method": "get",
+      "endpoint": "animal",
+      "responses": [
+        {
+          "uuid": "2c1a8e65-a1cc-4f8e-b634-f57f137c14ec",
+          "body": "{\n  \"message\":\"\",\n  \"data\":{\n    \"animals\":\n        [\n          {{#repeat 2}}\n           {\n                \"rfid\": {{faker 'datatype.uuid'}} ,\n                \"name\": {{faker 'name.firstName'}},\n                \"imageId\": {{faker 'datatype.uuid'}}\n           }\n           {{/repeat}}\n        ]\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Envoie une liste d'animaux avec un id, nom et IdImage aleatoire bouclé une fois ( quantité envoyé 2)",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "66e36d17-9ead-430c-a02b-2a00b29a40d1",
+      "type": "http",
+      "documentation": "url ===> http://localhost:3001/user/animal ",
+      "method": "post",
+      "endpoint": "animal",
+      "responses": [
+        {
+          "uuid": "d4b6271d-42dc-43fa-96d4-3675788b2a94",
+          "body": "{\n  \"message\":\"\",\n  \"data\":{\n    \"rfid\": \"\",\n    \"name\": \"\",\n    \"gender\": \"\",\n    \"birthdate\": \"\"\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Création d'un animal (dans le PUT, on pourra ajouter une photo)",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "301581a0-3103-401e-b358-dca4a8d71618",
+      "type": "http",
+      "documentation": "url ===> http://localhost:3001/user/animal/18",
+      "method": "put",
+      "endpoint": "animal/:id",
+      "responses": [
+        {
+          "uuid": "d2773312-c9bb-4d54-927a-810f7139494b",
+          "body": "{\n  \"message\":\"\",\n  \"data\":{\n    \"rfid\": {{faker 'datatype.uuid'}} ,\n    \"name\": {{faker 'name.firstName'}},\n    \"imageId\": {{faker 'datatype.uuid'}},\n    \"age\": {{faker 'datatype.number' options='{ \"min\": 1, \"max\": 10 }'}}\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Modifie le profil de l'animal( ajoute soit image, soit age, soit les 2 )",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "d26f24cd-d355-40b0-8763-193a5655a30d",
+      "type": "http",
+      "documentation": "url ===> http://localhost:3001/user/animal/18",
+      "method": "get",
+      "endpoint": "animal/:id",
+      "responses": [
+        {
+          "uuid": "bae54f25-3f1a-46e0-b9b6-556429b4f99d",
+          "body": "{\n  \"message\":\"\",\n  \"data\":{\n    \"name\": {{faker 'name.firstName'}},\n    \"age\": {{faker 'datatype.number' options='{ \"min\": 1, \"max\": 10 }'}},\n    \"imageId\": {{faker 'datatype.uuid'}},\n    \"gender\": \"Male\",\n    \"breed\": \"Main coon\"\n    }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Affiche les details de l'animal (nom, age, image, genre, race)",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "65734474-dc5b-4211-8b22-131590cdce66",
+      "type": "http",
+      "documentation": "url ===> http://localhost:3001/user/animal/18",
+      "method": "delete",
+      "endpoint": "animal/:id",
+      "responses": [
+        {
+          "uuid": "55b5c6d4-d29f-4979-9a1a-98fe3c093eac",
+          "body": "{  \n  \"message\":\"Pouet a été supprimé\",\n  \"data\": {\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Simule le message de suppression",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "7ac10272-20d2-42c9-b383-d53ac1419107",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "iot",
+      "responses": [
+        {
+          "uuid": "82024016-7102-4330-8935-6a21ee31b457",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "d7b3da18-a55c-4851-8dfb-8c266eeeb373",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "iot",
+      "responses": [
+        {
+          "uuid": "4bc47062-a8d0-4a89-ae9b-2f2a56a353e8",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "188c8195-b9f0-4310-b64f-c167dbb32dfb",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "iot/:id",
+      "responses": [
+        {
+          "uuid": "58175b29-1c22-4db0-884e-ffcd529b181c",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        },
+        {
+          "uuid": "b146592c-1896-4406-ae08-dfbd6f150719",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
+        },
+        {
+          "uuid": "6778e861-17f9-46ca-ae43-db6ec7445f94",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "9ec8d8b3-03da-4f00-8cf8-103af4ed723e",
+      "type": "http",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "iot/:id",
+      "responses": [
+        {
+          "uuid": "4fdb2183-d5c9-4f87-a3dd-07d82dd8713b",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "a3fa4320-057d-4701-9eee-5b53fa6c9984",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "iot/:id/details",
+      "responses": [
+        {
+          "uuid": "a06b42c7-f18a-4cc3-8b2b-1497b084944e",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "28691b55-fa21-438a-8292-542d37f0e4ac",
+      "type": "http",
+      "documentation": "",
+      "method": "put",
+      "endpoint": "iot/:id/details",
+      "responses": [
+        {
+          "uuid": "6a4d364b-04ce-48bd-8c2f-08a721a93bec",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "fa3114ee-3ba6-4025-8505-f6410e39c3f5",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "iot/:id/stop",
+      "responses": [
+        {
+          "uuid": "2b4bf5c1-3e68-42b6-bfc3-6f04221574aa",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "c7799f69-dfe3-4987-9d1e-8d9e3b4d4c49",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "iot/:id/start",
+      "responses": [
+        {
+          "uuid": "b34854e1-2f93-4b59-bd4e-32e971c11e75",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "5c2ddf5b-de45-4eee-804b-4f51614a9952"
+    },
+    {
+      "type": "route",
+      "uuid": "cd0b8b05-d67a-47bd-913d-53bb1efb08c8"
+    },
+    {
+      "type": "route",
+      "uuid": "a6763ae5-2394-42e4-8087-fe610382d5d6"
+    },
+    {
+      "type": "route",
+      "uuid": "2795495e-d925-49ce-b168-afbe452870a5"
+    },
+    {
+      "type": "route",
+      "uuid": "e9876282-dfd9-414e-9b1f-b2351fb2cc47"
+    },
+    {
+      "type": "route",
+      "uuid": "435a27ad-362e-4e32-82f5-b5eaa04479a4"
+    },
+    {
+      "type": "route",
+      "uuid": "ab8dcbad-416e-4848-91c9-2acdf35b11fb"
+    },
+    {
+      "type": "route",
+      "uuid": "66e36d17-9ead-430c-a02b-2a00b29a40d1"
+    },
+    {
+      "type": "route",
+      "uuid": "301581a0-3103-401e-b358-dca4a8d71618"
+    },
+    {
+      "type": "route",
+      "uuid": "d26f24cd-d355-40b0-8763-193a5655a30d"
+    },
+    {
+      "type": "route",
+      "uuid": "65734474-dc5b-4211-8b22-131590cdce66"
+    },
+    {
+      "type": "route",
+      "uuid": "7ac10272-20d2-42c9-b383-d53ac1419107"
+    },
+    {
+      "type": "route",
+      "uuid": "d7b3da18-a55c-4851-8dfb-8c266eeeb373"
+    },
+    {
+      "type": "route",
+      "uuid": "188c8195-b9f0-4310-b64f-c167dbb32dfb"
+    },
+    {
+      "type": "route",
+      "uuid": "9ec8d8b3-03da-4f00-8cf8-103af4ed723e"
+    },
+    {
+      "type": "route",
+      "uuid": "a3fa4320-057d-4701-9eee-5b53fa6c9984"
+    },
+    {
+      "type": "route",
+      "uuid": "28691b55-fa21-438a-8292-542d37f0e4ac"
+    },
+    {
+      "type": "route",
+      "uuid": "fa3114ee-3ba6-4025-8505-f6410e39c3f5"
+    },
+    {
+      "type": "route",
+      "uuid": "c7799f69-dfe3-4987-9d1e-8d9e3b4d4c49"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}
