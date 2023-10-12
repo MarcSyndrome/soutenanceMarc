@@ -13,7 +13,7 @@ J'ai relevé plusieurs problèmes à ce stade :
 - Certains formulaires étaient en réalité présentés sous forme de tableaux (utilisant les balises tr/td), dans lesquels du texte était inséré directement, 
 sans recours à des variables ou des composants réutilisables.
 - Certains éléments censés être des boutons étaient en fait des images (gif/jpg) agissant comme des liens de redirection.
-- Une portion substantielle du code datait de plus de 20 ans, ce que l'on appelle souvent du code "legacy", et s'est avérée au final inappropriée.
+- Une portion resonable du code datait de plus de 20 ans, ce que l'on appelle souvent du code "legacy".
 
 Cette phase m'a permis de saisir une réalité manifeste mais parfois négligée : alors que nos formations nous enseignent à construire des solutions à partir de zéro, 
 le monde professionnel peut nécessiter des compromis dans le code, que ce soit pour des raisons de durabilité environnementale (évoquée sous le terme "green IT") 
