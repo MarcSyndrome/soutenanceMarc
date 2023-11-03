@@ -1,13 +1,14 @@
 <?php
 require_once 'vendor/autoload.php';
- 
+
+ // On call les API
 use PayPalApiItem;
 use PayPalApiItemList;
  
 $apiContext = new PayPalRestApiContext(
     new PayPalAuthOAuthTokenCredential(
-        'YOUR_CLIENT_ID',     // ClientID
-        'YOUR_CLIENT_SECRET'  // ClientSecret
+        '18C713N7',     // ClientID
+        '53C83780085'  // ClientSecret
     )
 );
  
@@ -16,27 +17,32 @@ $apiContext->setConfig(
         'log.LogEnabled' => true,
         'log.FileName' => 'PayPal.log',
         'log.LogLevel' => 'DEBUG',
-        'mode' => 'sandbox', //'live' or 'sandbox'
+        'mode' => 'sandbox', //'live' or 'sandbox' Pour tests
     )
 );
- 
-$payer = new PayPalApiPayer();
+
+// Création client
+$payer = new PayPalApiPayer(); 
 $payer->setPaymentMethod('paypal');
  
-$item1 = new Item();
-$item1->setName($_POST['item'])
+// Création de l'objet vendu
+$itemSold = new Item(); 
+$itemSold->setName($_POST['item'])
     ->setCurrency('USD')
     ->setQuantity(1)
     ->setPrice($_POST['amount']);
  
+// Création de la liste qui contiendra les objets vendu
 $itemList = new ItemList();
-$itemList->setItems(array($item1));
+$itemList->setItems(array($itemSold));
  
-$amount = new PayPalApiAmount();
+// Création de la somme totale
+$amount = new PayPalApiAmount(); 
 $amount->setTotal($_POST['amount']);
 $amount->setCurrency('USD');
- 
-$transaction = new PayPalApiTransaction();
+
+// Regroupement de la liste et de la somme
+$transaction = new PayPalApiTransaction(); 
 $transaction->setDescription("Payment For Service")
             ->setItemList($itemList)
             ->setAmount($amount);
