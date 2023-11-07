@@ -1,0 +1,24 @@
+
+Slide 1 => Bonjour , presentation
+Bonjour, je n'est pas l'habitude de pratiquer l'oral (titre) tres souvent, donc s'il vous plait soyez indulgent, 
+parce qu'autant j'ai tendence a etre relax avec les gens, pas stresser de base et a l'aise dans les discutions, autant la,
+J'arrive sur la fin de mon année de formatiion en dur et, je vous cache pas que j'en mene pas large, donc s'il vous plait soyez clement .
+
+Ceci etant dit, je voulais aborder X sujets avec vous, le premier étant:
+
+slide 2 => Resumé ( langages, UML, Logiques, quantité d'information, l'equipe, mentor)
+
+Un resumé de ce que j'ai vu durant ma formation, qu'elle soit a la maison, a l'ecole ou au travail
+
+
+
+Slide 3 => les doutes ( les echecs, pas comprendre les choses, l'age, le risque de la réorientation pro )
+
+Relate mes debuts, mon premier hello world, ma premiere calculatrice, mon premier jeu RPG, la logique de comprendre
+impossible a comprendre sans aide, apprendre a apprendre, savoir quoi faire mais pas comment le faire,
+avoir la logique de ce dire "ok, je vais commencer par ca, ensuite il va me falloir ca, ajouter ceci et enfin voir ou on en est mais on va dans cette direction
+et tout mettre en oeuvre pour y arriver.
+
+
+Slide 4 => Le chiffrage, les echanges entre coequipiers, la gestion du groupe
+
