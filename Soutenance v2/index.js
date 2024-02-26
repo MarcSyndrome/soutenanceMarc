@@ -24,9 +24,9 @@ import { hash, compare } from 'bcryptjs';
 
 
 
+import React, { useState } from 'react';
+import { hash, compare } from 'bcryptjs';
 
-
-// Création/Vérification hash, salt
 const PasswordVerifier = () => {
   const [password, setPassword] = useState('');
   const [hashedPassword, setHashedPassword] = useState('');
@@ -48,17 +48,26 @@ const PasswordVerifier = () => {
     console.log('Mot de passe vérifié:', isMatch);
   };
 
+  // a changer plus tard
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    setPassword('Testopoil');
+    generateSaltAndHash();
+  };
+
   return (
     <div>
-      <label>
-        Mot de passe:
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-      </label>
-      <button onClick={generateSaltAndHash}>Vérifier et hacher</button>
+      <form onSubmit={handleFormSubmit}>
+        <label>
+          Mot de passe:
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </label>
+        <button type="submit">Vérifier et hacher</button>
+      </form>
 
       <div>
         <p>Sel (salt): {salt}</p>
@@ -69,6 +78,7 @@ const PasswordVerifier = () => {
 };
 
 export default PasswordVerifier;
+
 
 
 
