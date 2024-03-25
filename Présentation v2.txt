@@ -1,0 +1,59 @@
+Tokens:
+Un token est une unité d'information qui représente une autorisation. Dans le contexte de la sécurité informatique, les tokens sont souvent utilisés pour 
+l'authentification et l'autorisation. Ils sont générés par un système après une procédure d'authentification réussie et sont ensuite inclus dans les requêtes 
+pour prouver l'identité de l'utilisateur.
+
+Les clés numériques (JWT, OpenID):
+
+Un JSON Web Token est un format de token ouvert, qui est utilisé pour transmettre des informations entre des parties de confiance de manière sécurisée.  
+Il est souvent utilisé pour l'authentification et l'échange d'informations entre services. 
+Un JWT est généralement composé de trois parties : l'en-tête (header), la charge utile (payload), et la signature:
+_ En-tête (Header) : Contient des informations sur la manière dont le JWT est encodé, typiquement sous la forme de l'algorithme de signature utilisé 
+(par exemple, HMAC SHA256 ou RSA).
+_ Charge utile (Payload) : Contient les assertions ou les revendications. Ces revendications sont des déclarations au sujet de l'entité 
+(généralement l'utilisateur) et des métadonnées additionnelles. Il existe trois types de revendications : réservées, publiques et privées.
+_ Signature : Permet de vérifier que le JWT n'a pas été modifié pendant sa transmission. Elle est générée en utilisant l'en-tête encodé, la charge utile encodée, 
+une clé secrète (dans le cas de HMAC) ou une paire de clés (dans le cas de RSA).
+Un JWT peut être utilisé pour représenter une session utilisateur, pour l'authentification et l'autorisation, et pour échanger des informations entre des services 
+de manière sécurisée.
+
+
+
+OpenID est un protocole d'authentification basé sur OAuth 2.0 qui utilise les JWT pour permettre à une application (le client) de vérifier l'identité de l'utilisateur 
+basée sur l'authentification effectuée par un autre système (le fournisseur d'identité). Voici comment cela fonctionne en détail :
+
+Initiation de la connexion : L'utilisateur tente de se connecter à l'application cliente.
+
+Redirection vers le fournisseur d'identité (IDP) : Si l'utilisateur n'est pas déjà authentifié, il est redirigé vers le fournisseur d'identité 
+(par exemple, Google, Facebook) pour l'authentification.
+
+Authentification et consentement : L'utilisateur s'authentifie auprès du fournisseur d'identité et donne son consentement pour partager des informations 
+avec l'application cliente.
+
+Émission du JWT : Une fois l'authentification réussie, le fournisseur d'identité émet un JWT contenant des informations sur l'utilisateur 
+(les revendications) et le retourne à l'application cliente.
+
+Validation du JWT par l'application cliente : L'application cliente peut maintenant utiliser le JWT pour vérifier l'identité de l'utilisateur 
+et accorder l'accès en fonction des informations contenues dans le jeton.
+
+En résumé, OpenID utilise les JWT comme moyen sécurisé pour transmettre des informations d'identité entre le fournisseur d'identité et l'application cliente, 
+facilitant ainsi l'authentification sécurisée des utilisateurs.
+
+
+
+
+Authentification forte (je suis, je sais, j’ai) OTP (One-Time Password):
+L'authentification forte se réfère à l'utilisation de plusieurs méthodes pour s'assurer de l'identité d'un utilisateur. Les trois facteurs couramment utilisés sont :
+
+Quelque chose que vous êtes (je suis) : comme la reconnaissance biométrique.
+Quelque chose que vous savez (je sais) : comme un mot de passe.
+Quelque chose que vous avez (j'ai) : comme un jeton OTP généré par un dispositif.
+
+
+Avec l'arrivée des IA, certaines protections devront évoluer:
+L'avènement des intelligences artificielles introduit de nouveaux défis en matière de sécurité. Les protections traditionnelles peuvent être contournées 
+par des attaques sophistiquées basées sur l'IA. Il est nécessaire d'évoluer les méthodes de défense pour détecter et contrer ces nouvelles menaces.
+
+CVE (Common Vulnerabilities and Exposures):
+Le CVE est un système de référencement standard pour identifier et suivre publiquement les vulnérabilités de sécurité. Chaque CVE est une identification 
+unique attribuée à une faille spécifique, permettant aux organisations de partager des données sur les vulnérabilités et d'appliquer des correctifs de manière coordonnée.
